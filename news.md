@@ -10,6 +10,18 @@ Stay up to date with the latest research, events, and announcements from AI4REAS
 
 ---
 
+## November 19 2025 — Partnership with Ben Goertzel and SingularityNET  
+We are pleased to announce a new collaboration with [**Ben Goertzel**](https://en.wikipedia.org/wiki/Ben_Goertzel) and  
+[**SingularityNET**](https://singularitynet.io/), to advance research at the intersection of AGI, formal reasoning, and mathematics.  
+This partnership supports our efforts in autoformalization, interpretable intelligence, and open, verifiable AI research.
+
+As part of launching this collaboration, **AI4REASON has today received the first installment of an unrestricted gift from Ben Goertzel**.  
+
+Read the official announcement here: [BenGoertzel_AI4REASON.pdf](https://ai4reason.eu/BenGoertzel_AI4REASON.pdf)  
+Learn more about our [Sponsors →](sponsors.md)
+
+---
+
 ## October 16 2025 — Unrestricted Gift from Tomáš Mikolov  
 We are honoured to receive an **unrestricted gift** from [**Tomáš Mikolov**](https://en.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Mikolov),  
 Chief Scientific Officer at [**Bottlecap AI**](https://bottlecapai.com/).  
