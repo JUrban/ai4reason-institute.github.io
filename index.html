@@ -1,0 +1,169 @@
+---
+layout: default
+title: AI4REASON
+description: AI4REASON is an independent nonprofit research institute in Prague working on artificial intelligence, automated reasoning, machine learning, theorem proving and formal mathematics.
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Nonprofit research institute · Prague</p>
+      <h1>Independent research in AI, <span class="accent">automated reasoning</span> and machine learning</h1>
+      <p class="lead">
+        {{ site.legal_name }} combines learning with rigorous logical reasoning to advance mathematics,
+        formal verification and trustworthy AI, with applications across computer science, the natural
+        sciences and other areas of human knowledge. We share our knowledge and tools for public benefit.
+      </p>
+      <div class="btns">
+        <a class="btn" href="{{ '/research/' | relative_url }}">Our research</a>
+        <a class="btn ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a class="btn ghost" href="{{ '/funding/#support' | relative_url }}">Support us</a>
+      </div>
+    </div>
+    <aside class="facts" aria-label="Key facts">
+      <h2>At a glance</h2>
+      <ul>
+        <li><strong>Founded 24 September 2025</strong> in Prague by Josef Urban, Cezary Kaliszyk, Stephan Schulz and Robert Veroff</li>
+        <li><strong>ERC Advanced Grant NextReason</strong>, 2026–2030, with the University of Gothenburg and Charles University</li>
+        <li><strong>Offices in Karlín</strong>, Zirkon Office Center, opposite the Faculty of Mathematics and Physics</li>
+        <li><strong>Building on</strong> E, Prover9, ENIGMA, MaLARea, TacticToe, CoqHammer, Megalodon and Felix</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Highlights</h2><a href="{{ '/research/' | relative_url }}">All projects →</a></div>
+    <div class="stats">
+      <a class="stat" href="https://arxiv.org/abs/2601.03298">
+        <span class="num">130k lines</span>
+        <span class="what">Formal topology in two weeks</span>
+        <span class="detail">LLM agents and the Megalodon proof checker formalized general topology from Munkres for about USD 100 (ITP 2026).</span>
+      </a>
+      <a class="stat" href="{{ '/veroff-aim-proof/' | relative_url }}">
+        <span class="num">30,835 clauses</span>
+        <span class="what">Commutative AIM loops are nilpotent</span>
+        <span class="detail">Robert Veroff’s 40-day Bigloop/Prover9 run: one of the most complex proofs ever produced by Prover9.</span>
+      </a>
+      <a class="stat" href="https://arxiv.org/abs/2604.07455">
+        <span class="num">806 results</span>
+        <span class="what">Munkres’ topology in Isabelle/HOL</span>
+        <span class="detail">All 39 general-topology sections of the textbook, autoformalized with coding agents and Sledgehammer.</span>
+      </a>
+      <a class="stat" href="https://github.com/JUrban/candle-4ct">
+        <span class="num">6 of 6</span>
+        <span class="what">Four Colour Theorem in Candle</span>
+        <span class="detail">All six final formulations checked, with verified computation for the 633 reducibility checks.</span>
+      </a>
+      <a class="stat" href="https://github.com/felixprover/felix">
+        <span class="num">220k lines</span>
+        <span class="what">Readable mathematics in Felix</span>
+        <span class="detail">Tietze extension, Silver’s theorem, Erdős–Dushnik–Miller, Stone duality and more, in controlled mathematical English.</span>
+      </a>
+      <a class="stat" href="https://link.springer.com/chapter/10.1007/978-3-032-38214-6_5">
+        <span class="num">64.5k → 24k</span>
+        <span class="what">Distilling autoformalized proofs</span>
+        <span class="detail">Shortening machine-generated proofs while keeping them verifiable (CICM 2026).</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><h2>What we do</h2><a href="{{ '/about/' | relative_url }}">About the institute →</a></div>
+    <ul class="areas">
+      <li>
+        <h3>AI for theorem proving</h3>
+        <p>Learning-guided automated and interactive theorem proving: clause selection, premise selection, conjecturing and large proof searches.</p>
+      </li>
+      <li>
+        <h3>Autoformalization</h3>
+        <p>Turning textbook mathematics into machine-checked libraries with LLM agents, proof checkers and automated provers, at low cost and large scale.</p>
+      </li>
+      <li>
+        <h3>Automated mathematicians</h3>
+        <p>Synthesis of mathematical objects, programs and conjectures, and time-boxed experiments with AI agents on open problem collections.</p>
+      </li>
+      <li>
+        <h3>Trustworthy proof</h3>
+        <p>Re-checking landmark proofs on verified foundations, explicit proof certificates, and formally verified proof checkers.</p>
+      </li>
+      <li>
+        <h3>Collaboration and education</h3>
+        <p>Joint research and doctoral training with Charles University and the University of Gothenburg; workshops, seminars and the AITP conference.</p>
+      </li>
+      <li>
+        <h3>Open science</h3>
+        <p>Our software, data and formal libraries are open source, and we prefer open-access publication so that others can build on our results.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <div class="section-head"><h2>News</h2><a href="{{ '/news/' | relative_url }}">All news →</a></div>
+      <ul class="items">
+        {%- for post in site.posts limit: 6 %}
+        <li>
+          <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></p>
+          <p class="t"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></p>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="section-head"><h2>Recent publications</h2><a href="{{ '/publications/' | relative_url }}">All 2026 work →</a></div>
+      {%- assign papers = site.data.publications | where: 'group', 'paper' %}
+      <ul class="items">
+        {%- for p in papers limit: 6 %}
+        <li>
+          <p class="meta">{{ p.venue }}</p>
+          <p class="t"><a href="{{ p.links[0].url }}">{{ p.title }}</a></p>
+          <p class="d">{{ p.authors | join: ', ' }}</p>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Researchers</h2><a href="{{ '/people/' | relative_url }}">All people →</a></div>
+    <div class="people compact">
+      {%- for p in site.data.people.director %}{% include person.html p=p compact=true %}{% endfor %}
+      {%- for p in site.data.people.researchers %}{% include person.html p=p compact=true %}{% endfor %}
+    </div>
+    <h3 style="margin-top:2rem">Visitors in 2026</h3>
+    <p>
+      {%- for v in site.data.people.visitors_2026 -%}
+        <a href="{{ '/people/#' | append: v.id | relative_url }}">{{ v.name }}</a> <span class="muted">({{ v.inst }})</span>{% unless forloop.last %}, {% endunless %}
+      {%- endfor -%}
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <h2 style="margin-top:0">Supported by</h2>
+      <p>
+        The European Research Council (ERC Advanced Grant <a href="https://cordis.europa.eu/project/id/101200949">NextReason</a>),
+        the SingularityNET Foundation, and gifts from Tomáš Mikolov, Ben Goertzel (Novamente LLC),
+        Michael R. Douglas, Christian Szegedy, Josef Urban and the founders, with organizational support from EUReason s.r.o.
+      </p>
+      <p><a href="{{ '/funding/' | relative_url }}">Funding and sponsors →</a></p>
+    </div>
+    <div>
+      <h2 style="margin-top:0">Visit us</h2>
+      <p>
+        <strong>{{ site.office.name }}</strong>, {{ site.office.street }}, {{ site.office.city }},
+        {{ site.office.note }} in Karlín, Prague.
+      </p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ '/contact/' | relative_url }}">Contact and directions →</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,371 @@
+# 2026 papers, talks and manuscripts by AI4REASON people.
+# group: paper | talk | manuscript.  people: institute members (used for filtering).
+- id: palaver
+  group: paper
+  sort: 2026-11-19
+  date: "NLP4CALL 2026"
+  title: "Multilingual language learning with Grammatical Framework"
+  authors: ["Adrian De Lon", "Inari Listenmaa"]
+  people: ["Adrian De Lon"]
+  venue: "NLP4CALL 2026, Gothenburg · pp. 111–118"
+  summary: "Palaver is a multilingual language-learning prototype built with Haskell and Grammatical Framework. Shared grammatical representations generate phrases, translations, glosses, and answer alternatives. Learning progress and spaced repetition persist when the learner changes the supporting language. The paper describes demonstration courses in seven languages and explores how one structured representation can support both teaching material and answer checking."
+  links:
+    - {label: "paper", url: "https://aclanthology.org/2026.nlp4call-1.9/"}
+    - {label: "PDF", url: "https://aclanthology.org/2026.nlp4call-1.9.pdf"}
+- id: neural-conjecturing-published
+  group: paper
+  sort: 2026-10-24
+  date: "IWIL 2026"
+  title: "Neural Conjecturing for Saturation Theorem Provers"
+  authors: ["Karel Chvalovský", "Martin Suda", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "IWIL 2026 · Kalpa Publications in Computing 23, pp. 10–20"
+  summary: "A graph neural network proposes intermediate lemmas that restructure saturation-based proof search. Candidate cuts are accepted only when automated provers discharge both branches. Experiments on Mizar-derived problems study speedups in E and transfer to Vampire through AVATAR claims. The work couples learned conjecture generation to logical validation and a feedback loop for training."
+  links:
+    - {label: "paper", url: "https://easychair.org/publications/paper/HcmX"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/JU1.pdf"}
+- id: epr-second-player
+  group: paper
+  sort: 2026-10-23
+  date: "LPAR 2026"
+  title: "Reintroducing the Second Player in EPR"
+  authors: ["Leroy Chew", "Mikoláš Janota", "Mirek Olšák", "Martin Suda"]
+  people: ["Mirek Olšák"]
+  venue: "LPAR 2026 · EPiC Series in Computing 112, pp. 61–79"
+  summary: "The paper identifies a first-order fragment, QEALM, whose satisfiability problem retains a QBF-like alternating game interpretation. It establishes PSPACE completeness and restrictions corresponding to levels of the polynomial hierarchy, then classifies relevant TPTP problems. The result gives a more structured account of computational complexity inside effectively propositional reasoning."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2602.16410"}
+    - {label: "DOI", url: "https://easychair.org/publications/paper/4vvj"}
+- id: teaching-vampire
+  group: paper
+  sort: 2026-10-23
+  date: "LPAR 2026"
+  title: "Teaching Vampire New Tricks: An Experimental Study of Neural Clause Selection"
+  authors: ["Karel Chvalovský", "Martin Suda", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "LPAR 2026 · EPiC Series in Computing 112, pp. 42–60"
+  summary: "This study examines neural clause selection in Vampire across benchmarks derived from interactive proof libraries and across proving strategies. Learned guidance helps within domains, while transferring a model between domains can be less effective. Training across datasets mitigates that weakness. The experiments also show why gains for a single strategy need to be assessed again when the prover runs a stronger strategy portfolio."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2609.16228"}
+    - {label: "DOI", url: "https://easychair.org/publications/paper/vLFt"}
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_10.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/MS.pdf"}
+- id: groupworld-report
+  group: manuscript
+  sort: 2026-09-30
+  date: "September 2026"
+  title: "Forty-eight hours with GroupWorld: an experiment in agentic mathematical research"
+  authors: ["Codex gpt-6-astra", "Michael Kinyon", "Josef Urban", "Vladimir Shpilrain"]
+  people: ["Josef Urban"]
+  venue: "Repository manuscript (version 1)"
+  summary: "The GroupWorld report presents another 48-hour research experiment, combining group-theoretic arguments, exact programs, GAP, selected Lean work, and literature checks. Its deadline record distinguishes proposed coverage of complete entries from partial results and already known subparts. The manuscript exposes dependencies and limitations so that specialists can assess correctness and novelty."
+  links:
+    - {label: "manuscript", url: "https://github.com/JUrban/gworld1/blob/5d4ce73b56f7dbb2d794a8689a56e82272be82a4/paper/gworld-experiment.pdf"}
+- id: distilling-proofs
+  group: paper
+  sort: 2026-09-29
+  date: "CICM 2026"
+  title: "Distilling Autoformalized Proofs"
+  authors: ["Adrian De Lon", "Atle Hahn", "Josef Urban"]
+  people: ["Adrian De Lon", "Atle Hahn", "Josef Urban"]
+  venue: "CICM 2026 · LNCS 16907, pp. 75–92, Springer"
+  summary: "Large autoformalizations can be correct yet too verbose to read comfortably. This work studies proof refactoring in Felix, combining automated theorem proving with checks that preserve verification. On a topology development through Urysohn’s lemma, the reported reduction is from approximately 64,500 to 24,000 lines. The paper treats readability, proof structure, and traceability to the informal source as goals alongside successful checking."
+  links:
+    - {label: "DOI", url: "https://link.springer.com/chapter/10.1007/978-3-032-38214-6_5"}
+- id: kourovka-codex-report
+  group: manuscript
+  sort: 2026-09-19
+  date: "September 2026"
+  title: "Forty-eight hours with the Kourovka Notebook: an experiment in agentic mathematical research"
+  authors: ["Codex gpt-6-astra", "Michael Kinyon", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "Repository manuscript (version 4)"
+  summary: "This report documents a 48-hour autonomous mathematical-research experiment and subsequent review. It presents candidate arguments, exact computations, literature comparisons, and a record of corrections. The current edition retains the withdrawal of one misread problem and distinguishes candidate solutions from established new theorems. A separate mathematical edition shares the underlying proof sources."
+  links:
+    - {label: "manuscript", url: "https://github.com/JUrban/kour1/blob/dce7931e980c7db83100a07fbe084fc1dd655fdb/paper/kourovka-experiment.pdf"}
+- id: kourovka-claude-report
+  group: manuscript
+  sort: 2026-09-17
+  date: "September 2026"
+  title: "Forty-eight hours of an AI agent on the Kourovka Notebook: five solved problems, several partial results, and a record of the process"
+  authors: ["Claude Fable 5.1", "Michael Kinyon", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "Repository manuscript"
+  summary: "A second 48-hour experiment investigates Kourovka problems using an AI agent, GAP computations, and mathematical reasoning. Its manuscript presents five complete-answer claims and several partial results, alongside reproducible calculations and a process record. Correctness and novelty require result-specific review; the title’s solved-problem wording should not be treated as independent certification."
+  links:
+    - {label: "manuscript", url: "https://github.com/JUrban/kour1cl/blob/290fc829d2be01cab8a1784d006bfc0250d7f11c/paper/main.pdf"}
+- id: konvens-glossing
+  group: talk
+  sort: 2026-09-15
+  date: "September 2026"
+  title: "Multilingual Interlinear Glossing in GF"
+  authors: ["Adrian De Lon", "Inari Listenmaa"]
+  people: ["Adrian De Lon"]
+  venue: "KONVENS 2026, Hamburg · poster"
+  summary: "This KONVENS contribution applies Grammatical Framework to multilingual interlinear glossing. Its approach uses grammatical structure to connect expressions across languages, a direction also cited by the authors’ later Palaver language-learning paper. The official programme verifies the title, authors, and poster session; a separate poster file or full paper was not located."
+  links:
+    - {label: "programme", url: "https://konvens2026.uni-hamburg.de/index.php/dates-program/"}
+- id: neural-conjecturing-aitp
+  group: talk
+  sort: 2026-09-04
+  date: "AITP 2026"
+  title: "Neural Conjecturing for Saturation Theorem Provers (AITP abstract)"
+  authors: ["Jan Jakubův", "Mirek Olšák", "Martin Suda", "Josef Urban"]
+  people: ["Mirek Olšák", "Josef Urban"]
+  venue: "AITP 2026, Aussois · extended abstract"
+  summary: "This AITP contribution investigates learned conjectures as cut formulas for first-order theorem proving. A neural generator proposes useful intermediate statements and automated proof search tests their value. The abstract documents an earlier experimental account related to the later proceedings paper, with its own author list and results snapshot."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_40.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/JU1.pdf"}
+- id: atlas-equivalence
+  group: talk
+  sort: 2026-09-04
+  date: "AITP 2026"
+  title: "Autoformalizing Fast–Slow Equivalence Proofs for Atlas Computations in the Unitary Dual Problem"
+  authors: ["Mario Carneiro", "Stephen D. Miller", "Magnus Myreen", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "AITP 2026, Aussois · extended abstract"
+  summary: "Atlas computations in representation theory rely on optimized algorithms whose mathematical behavior must agree with simpler reference versions. This contribution studies autoformalization of the required fast–slow equivalence arguments, connecting executable computations with formal verification. The work targets trust in computational evidence for the unitary dual problem; it does not establish that all Atlas algorithms or the full underlying computation have been verified."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_36.pdf"}
+- id: math-assignment-correction
+  group: talk
+  sort: 2026-09-04
+  date: "AITP 2026"
+  title: "Project Proposal: Automated Correction of Math Assignments"
+  authors: ["Mirek Olšák", "David Stanovský"]
+  people: ["Mirek Olšák"]
+  venue: "AITP 2026, Aussois · project proposal"
+  summary: "This proposal combines recognition of handwritten mathematics with assessment of correctness and clarity. A corpus of linear-algebra assignments and grader feedback supplies the intended training and evaluation material. The planned system would produce grades and concise comments, with mathematical verification as part of the research direction. The abstract presents a project proposal rather than a completed grading system."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_31.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/DS.pdf"}
+- id: felix-system
+  group: talk
+  sort: 2026-09-03
+  date: "AITP 2026"
+  title: "Felix: a Scalable Natural Proof Assistant"
+  authors: ["Adrian De Lon"]
+  people: ["Adrian De Lon"]
+  venue: "AITP 2026, Aussois · system presentation"
+  summary: "Felix develops a natural-language-oriented proof assistant for larger mathematical libraries and faster autoformalization cycles. The presentation introduces improvements to parsing and the proof language, more efficient internal processing, parallel automated-prover calls, and caching. It connects readable mathematical exposition with automated checking and provides the system context for the topology and proof-distillation experiments."
+  links:
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/ADL.pdf"}
+- id: felix-autoformalization
+  group: talk
+  sort: 2026-09-03
+  date: "AITP 2026"
+  title: "Autoformalization Experiments with Felix / Understandable Autoformalization"
+  authors: ["Adrian De Lon", "Atle Hahn"]
+  people: ["Adrian De Lon", "Atle Hahn"]
+  venue: "AITP 2026, Aussois · abstract and talk"
+  summary: "These experiments autoformalize topology in Felix while treating readability and source fidelity as central research questions. Controlled mathematical English and automated theorem proving let agents state human-sized proof steps, then refine them through a generate–check–repair loop. The contribution also examines post-processing and presentation of the resulting development so that machine-checked texts remain open to human review."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_23.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/AH.pdf"}
+- id: reinformalization
+  group: talk
+  sort: 2026-09-03
+  date: "AITP 2026"
+  title: "Reinformalizing Autoformalizations: Combining Naproche and Informath"
+  authors: ["Adrian De Lon", "Aarne Ranta"]
+  people: ["Adrian De Lon"]
+  venue: "AITP 2026, Aussois · abstract and talk"
+  summary: "This work turns autoformalized mathematics back into readable mathematical language using symbolic rules. Felix/Naproche supplies formal input and Informath, implemented with Grammatical Framework, supplies a linguistic representation. The case study on topology investigates how to reduce the verbosity of a literal rendering while keeping a transparent connection to the checked source."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_21.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/AR2.pdf"}
+- id: program-generation
+  group: talk
+  sort: 2026-09-02
+  date: "AITP 2026"
+  title: "Program Generation as an Evolution Operator"
+  authors: ["Thibault Gauthier"]
+  people: ["Thibault Gauthier"]
+  venue: "AITP 2026, Aussois · abstract and talk"
+  summary: "Gauthier explores programs that generate other programs as a mechanism for search and adaptation. Rather than specifying mutation and crossover operations externally, the approach lets program generation supply evolutionary variation. The contribution connects universal search, learned program representations, and experiments on sequence prediction, extending the research direction behind Alien Coding."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_17.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/TG.pdf"}
+- id: metamath-verifier
+  group: talk
+  sort: 2026-09-02
+  date: "AITP 2026"
+  title: "Lean 4 Verified Metamath Verifier: Investigating AI-driven Software Verification"
+  authors: ["Zar Goertzel", "Oruži"]
+  people: ["Zar Goertzel"]
+  venue: "AITP 2026, Aussois · abstract and talk"
+  summary: "Goertzel reports AI-assisted completion and verification work on a Metamath verifier in Lean, accompanied by a specification-driven test suite. Earlier generated implementations passed existing tests yet missed basic requirements. The contribution uses those failures to examine the gap between plausible code, test coverage, a faithful specification, and formal software verification."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_38.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/ZG.pdf"}
+    - {label: "code", url: "https://github.com/zariuq/mm-lean4/tree/verified-mm-latest"}
+- id: lean-tactic-generation
+  group: talk
+  sort: 2026-09-01
+  date: "AITP 2026"
+  title: "Generating Lean 4 Tactics from User Specifications: Strategies for LLM-Assisted Metaprogramming"
+  authors: ["Silvère Gangloff", "Jan Hula", "Mirek Olšák"]
+  people: ["Mirek Olšák"]
+  venue: "AITP 2026, Aussois · extended abstract"
+  summary: "This work in progress studies how coding agents can synthesize new Lean tactics from user requirements. It compares structured specifications, incremental planning, and live access to Lean diagnostics and search tools. The experiments distinguish tactic implementation from ordinary proof generation and examine failures caused by changing APIs and cascading implementation errors."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_8.pdf"}
+- id: implicit-explicit
+  group: talk
+  sort: 2026-09-01
+  date: "AITP 2026"
+  title: "Making the Implicit Explicit"
+  authors: ["Jan Hula", "Petr Hyner", "Mirek Olšák"]
+  people: ["Mirek Olšák"]
+  venue: "AITP 2026, Aussois · work-in-progress abstract"
+  summary: "The proposed pipeline extracts explicit algorithms from successful but opaque language-model reasoning. It moves from discovery traces through reusable subprocedures to executable implementations and held-out tests. The aim is to turn repeated model reasoning into inspectable, composable mechanisms that can interact with symbolic tools and proof assistants."
+  links:
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_45.pdf"}
+- id: agent-hunt
+  group: paper
+  sort: 2026-08-20
+  date: "PAAR 2026"
+  title: "Agent Hunt: Bounty Based Collaborative Autoformalization With LLM Agents"
+  authors: ["Chad E. Brown", "Cezary Kaliszyk", "Josef Urban"]
+  people: ["Chad E. Brown", "Josef Urban"]
+  venue: "PAAR 2026 · CEUR Workshop Proceedings 4241"
+  summary: "Agent Hunt distributes algebraic-topology autoformalization among coding agents through a simulated bounty market. Agents propose statements, request useful lemmas, and compete to prove them while interacting with Megalodon. Accepted proofs are checked by the proof assistant. The experiment explores decentralized coordination and library construction, with the market serving as a research mechanism rather than a financial service."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2603.06737"}
+    - {label: "PDF", url: "https://ceur-ws.org/Vol-4241/short5.pdf"}
+    - {label: "paper", url: "https://ceur-ws.org/Vol-4241/"}
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/slides/The_Agent_Hunt_Market.pdf"}
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/slides/The_Agent_Hunt_Marketplace.pdf"}
+- id: topology-130k
+  group: paper
+  sort: 2026-07-27
+  date: "ITP 2026"
+  title: "130k Lines of Formal Topology in Two Weeks: Simple and Cheap Autoformalization for Everyone?"
+  authors: ["Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "ITP 2026, Lisbon · LIPIcs 382, 31:1–31:9"
+  summary: "A low-cost feedback loop between coding agents and the Megalodon proof checker produced a substantial formalization of general topology from Munkres. The paper documents rapid progress on textbook-scale mathematics and the practical value of a fast checker, an initial library, and persistent repair of failed proofs. Its January snapshot is a report of that experiment, rather than a claim that the entire textbook has been formalized."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2601.03298"}
+    - {label: "DOI", url: "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2026.31"}
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/slides/itp2026_urban_autoformalization.pdf"}
+    - {label: "video (Bath seminar)", url: "https://www.youtube.com/watch?v=BmQCErUA72A"}
+    - {label: "video (ITP)", url: "https://www.youtube.com/watch?v=kthd9E6hHCQ"}
+    - {label: "video (DSAI seminar)", url: "https://1drv.ms/v/c/b52820c6dbfb4e92/IQAOJl9t4tRCSad4MYGAevJKAcu8PJDt2cf7aAo9sWswJqs?e=7sdsgi"}
+- id: qed-utopia-agi
+  group: talk
+  sort: 2026-07-20
+  date: "July 2026"
+  title: "Is the QED Utopia Upon Us? From Autoformalization to Machine-Understandable Science, Software and Beyond"
+  authors: ["Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "AGI 2026 · keynote"
+  summary: "Urban’s AGI keynote connects recent autoformalization experiments with the longer-term aim of machine-understandable mathematics and science. It discusses the role of proof checking and automated reasoning in making AI-produced formal material reusable and trustworthy, while considering the implications for software and broader scientific workflows."
+  links:
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/slides/agi26.pdf"}
+    - {label: "video", url: "https://www.youtube.com/watch?v=kQBwtgkHnC4&t=7486"}
+- id: alien-codes-scml
+  group: talk
+  sort: 2026-07-07
+  date: "July 2026"
+  title: "Alien Codes and Their Automated and Human Explanations"
+  authors: ["Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "SCML 2026 · invited talk"
+  summary: "The SCML invited presentation examines programs discovered for integer sequences and how their behavior can be explained automatically and by mathematicians. It connects program synthesis and learned conjecturing with mathematical interpretation, including examples from the Alien Coder line of work. The deck credits joint work with Thibault Gauthier, Mirek Olšák, and Thomas Hales."
+  links:
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/slides/scml26oeis.pdf"}
+    - {label: "abstract", url: "https://scml.risc.jku.at/conference-2026/talks/"}
+    - {label: "video", url: "https://www.youtube.com/watch?v=wfPLDlMiWI0"}
+- id: understandable-tca
+  group: talk
+  sort: 2026-07-02
+  date: "July 2026"
+  title: "Understandable Autoformalization"
+  authors: ["Atle Hahn"]
+  people: ["Atle Hahn"]
+  venue: "TCA 2026, Lisbon · AI and Theorem Proving session"
+  summary: "The TCA 2026 programme lists Hahn in its Artificial Intelligence and Theorem Proving thematic session. The contribution concerns making autoformalization understandable to mathematicians. Its title connects with the later AITP presentation, but the programme alone does not establish identical content or a shared slide deck."
+  links:
+    - {label: "programme", url: "https://sites.google.com/fct.unl.pt/tca2026/thematic-sessions"}
+- id: leap
+  group: paper
+  sort: 2026-06-02
+  date: "June 2026"
+  title: "LEAP: Supercharging LLMs for Formal Mathematics with Agentic Frameworks"
+  authors: ["Po-Nien Kung", "Linfeng Song", "Dawsen Hwang", "Jinsung Yoon", "Chun-Liang Li", "Simone Severini", "Mirek Olšák", "Edward Lockhart", "Quoc V. Le", "Burak Gokturk", "Thang Luong", "Tomas Pfister", "Nanyun Peng"]
+  people: ["Mirek Olšák"]
+  venue: "arXiv 2606.03303"
+  summary: "LEAP organizes language models as agents that develop Lean proofs through decomposition, tool use, and feedback from the proof environment. The work evaluates how much an agent framework can improve formal mathematics beyond a model’s direct proof attempts, including challenging competition-style problems. Its accompanying benchmark and experimental comparisons address the contribution of the surrounding workflow to formal reasoning performance."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2606.03303"}
+- id: naproche-workshop
+  group: talk
+  sort: 2026-05-29
+  date: "May 2026"
+  title: "Autoformalization with Naproche-ZF"
+  authors: ["Atle Hahn"]
+  people: ["Atle Hahn"]
+  venue: "Gothenburg CHAIR Workshop, Chalmers"
+  summary: "Hahn’s CHAIR workshop contribution updates the topology autoformalization work with Adrian De Lon and Josef Urban. The programme highlights proof distillation, proof elaboration, and HTML rendering: steps that make a formal development easier to inspect and use after initial proof generation."
+  links:
+    - {label: "programme", url: "https://josefurban.eu/chalmers_workshop_webpage.html"}
+- id: vibe-coding-itp
+  group: talk
+  sort: 2026-05-28
+  date: "May 2026"
+  title: "Vibe-coding an ITP"
+  authors: ["Mirek Olšák"]
+  people: ["Mirek Olšák"]
+  venue: "Gothenburg CHAIR Workshop · CICM 2026 invited talk"
+  summary: "Olšák explores a proof assistant built around a small human-written kernel, with coding agents supplying much of the surrounding proof library and automation. The CHAIR presentation introduces just-in-time trust: execution becomes acceptable when its safety can be proved. The later CICM invited-talk abstract revisits what coding agents can contribute beyond individual proofs or tactics to the construction of an entire proof environment."
+  links:
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/chair26/vibe-jit-itp.pdf"}
+    - {label: "abstract", url: "https://cicm-conference.org/2026/cicm.php?event=&menu=invited"}
+- id: qed-vibe-coding
+  group: talk
+  sort: 2026-05-27
+  date: "May 2026"
+  title: "To QED and Beyond: Adventures in Vibe Coding"
+  authors: ["Zar Goertzel"]
+  people: ["Zar Goertzel"]
+  venue: "Gothenburg CHAIR Workshop, Chalmers"
+  summary: "This workshop presentation surveys AI-assisted formalization and software experiments, including inference foundations and Metamath verification. It draws lessons from both successful developments and generated code that passed tests while missing parts of the specification. A recurring theme is how to manage increased productivity without losing confidence in the result."
+  links:
+    - {label: "slides", url: "https://github.com/JUrban/jurban.github.io/blob/b53a8da5a315ce113b0d649a198b4627a079bdf0/chair26/ZG.pdf"}
+- id: munkres-isabelle
+  group: paper
+  sort: 2026-04-08
+  date: "April 2026"
+  title: "Munkres’ General Topology Autoformalized in Isabelle/HOL"
+  authors: ["Dustin Bryant", "Jonathan Julián Huerta y Munive", "Cezary Kaliszyk", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "arXiv 2604.07455 · AITP 2026"
+  summary: "This experiment formalizes Munkres’s general topology in Isabelle/HOL using coding agents, declarative proofs, and Sledgehammer. The authors report a complete development covering the textbook’s 39 general-topology sections, with 806 proved results and no sorry admissions in the reported snapshot. The work also examines the agent workflow and human interaction records, making it a case study in organizing large autoformalization tasks."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2604.07455"}
+    - {label: "abstract", url: "https://aitp-conference.org/2026/abstract/AITP_2026_paper_37.pdf"}
+    - {label: "slides", url: "https://aitp-conference.org/2026/slides/JU2.pdf"}
+- id: llm2smt
+  group: paper
+  sort: 2026-03-06
+  date: "March 2026"
+  title: "LLM2SMT: Building an SMT Solver with Zero Human-Written Code"
+  authors: ["Mikoláš Janota", "Mirek Olšák"]
+  people: ["Mirek Olšák"]
+  venue: "arXiv 2603.06931 · SMT 2026"
+  summary: "LLM2SMT studies whether coding agents can build a working SMT solver under human direction without human-written implementation code. The resulting solver handles quantifier-free equality with uninterpreted functions using a DPLL(T) architecture and congruence closure. It also produces Lean proofs for unsatisfiable inputs. The paper documents the development process and the verification role of generated proof artifacts."
+  links:
+    - {label: "arXiv", url: "https://arxiv.org/abs/2603.06931"}
+- id: cvc5-quantifier-selection
+  group: paper
+  sort: 2026-02-01
+  date: "February 2026"
+  title: "Machine learning for quantifier selection in cvc5"
+  authors: ["Jan Jakubův", "Mikoláš Janota", "Jelle Piepenbrock", "Josef Urban"]
+  people: ["Josef Urban"]
+  venue: "International Journal of Approximate Reasoning 189"
+  summary: "This journal article integrates fast learned guidance into cvc5’s quantifier instantiation process. Gradient-boosted decision trees help the solver choose which quantified formulas to instantiate during a run. Evaluation uses problems derived from Mizar and HOL4, including individual strategies and portfolios. The contribution connects statistical guidance to a working SMT solver while retaining its underlying logical reasoning."
+  links:
+    - {label: "paper", url: "https://doi.org/10.1016/j.ijar.2025.109602"}

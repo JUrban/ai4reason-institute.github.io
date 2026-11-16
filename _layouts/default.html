@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body class="{{ page.body_class }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="AI4REASON home">AI<span class="four">4</span>REASON</a>
+      <nav aria-label="Main">
+        <ul>
+          {%- for item in site.nav %}
+          {%- assign active = false %}
+          {%- if page.url == item.url %}{% assign active = true %}{% endif %}
+          {%- if item.url == '/news/' and page.layout == 'post' %}{% assign active = true %}{% endif %}
+          <li><a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

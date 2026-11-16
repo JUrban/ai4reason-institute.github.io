@@ -1,0 +1,37 @@
+---
+title: Contact
+permalink: /contact/
+kicker: Get in touch
+lead: Our offices are in Prague–Karlín, right opposite the Faculty of Mathematics and Physics of Charles University.
+description: Office address, registered office and contact details of the AI4REASON Institute in Prague.
+---
+<div class="boxes">
+  <div class="box">
+    <h3>Office</h3>
+    <p><strong>{{ site.office.name }}</strong><br>
+      {{ site.office.street }}<br>
+      {{ site.office.city }}<br>
+      Czech Republic</p>
+    <p class="muted">Opposite the Karlín building of the Faculty of Mathematics and Physics of Charles University (Sokolovská 83).
+      Nearest metro: Křižíkova (line B).</p>
+    <p><a href="https://www.openstreetmap.org/search?query=Sokolovsk%C3%A1%20131%2F86%2C%20Praha">OpenStreetMap</a> ·
+      <a href="https://mapy.cz/?q=Sokolovsk%C3%A1%20131%2F86%2C%20Praha">Mapy.cz</a></p>
+  </div>
+  <div class="box">
+    <h3>Email</h3>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <h3>Registered office</h3>
+    <p>{{ site.legal_name }}<br>
+      {{ site.registered.street }}<br>
+      {{ site.registered.city }}<br>
+      Czech Republic</p>
+    <p>Business ID (IČ): {{ site.ico }}</p>
+  </div>
+  <div class="box">
+    <h3>Supporting us</h3>
+    <p>Bank accounts (EUR and USD) and tax-deductible giving from the US are listed on the
+      <a href="{{ '/funding/#support' | relative_url }}">funding page</a>.</p>
+    <h3>Web</h3>
+    <p><a href="https://ai4reason.eu">ai4reason.eu</a> · <a href="{{ '/feed.xml' | relative_url }}">news feed</a></p>
+  </div>
+</div>

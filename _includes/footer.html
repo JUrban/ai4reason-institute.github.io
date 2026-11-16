@@ -1,0 +1,36 @@
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="wordmark small">AI<span class="four">4</span>REASON</p>
+        <p class="muted">{{ site.tagline }}.</p>
+        <p class="muted">{{ site.legal_name }} · IČ {{ site.ico }}</p>
+      </div>
+      <div>
+        <h2>Office</h2>
+        <p>{{ site.office.name }}<br>{{ site.office.street }}<br>{{ site.office.city }}<br>
+          <span class="muted">{{ site.office.note }}</span></p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          Registered office:<br>{{ site.registered.street }}, {{ site.registered.city }}</p>
+      </div>
+      <div>
+        <h2>Site</h2>
+        <ul class="plain">
+          <li><a href="{{ '/annual-report-2025/' | relative_url }}">Annual report 2025</a></li>
+          <li><a href="{{ '/gender-equality-plan.pdf' | relative_url }}">Gender equality plan</a></li>
+          <li><a href="{{ '/funding/#support' | relative_url }}">Support our work</a></li>
+          <li><a href="{{ '/feed.xml' | relative_url }}">News feed (Atom)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="eu">
+      <img src="{{ '/assets/img/eu.svg' | relative_url }}" width="72" height="48" alt="Flag of the European Union">
+      <img src="{{ '/assets/img/erc.svg' | relative_url }}" width="56" height="56" alt="European Research Council">
+      <p>The NextReason project is funded by the European Union (ERC Advanced Grant 101200949). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council. Neither the European Union nor the granting authority can be held responsible for them.</p>
+    </div>
+    <p class="copy muted">© {{ site.legal_name }} 2025–{{ site.time | date: '%Y' }}. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless noted otherwise.</p>
+  </div>
+</footer>

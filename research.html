@@ -1,0 +1,52 @@
+---
+title: Research
+permalink: /research/
+wide: true
+kicker: Projects and software
+lead: Our research program covers AI for automated and interactive theorem proving, autoformalization, synthesis of mathematical objects and conjectures, and autonomous “automated mathematicians”. Below are our current projects, with an honest status line for each.
+description: Research projects of AI4REASON in autoformalization, readable formal mathematics, verified computation, learning-guided automated reasoning and AI for mathematical research.
+---
+<ul class="toc">
+  {%- for g in site.data.projects %}
+  <li><a href="#{{ g.id }}">{{ g.name }}</a></li>
+  {%- endfor %}
+  <li><a href="#software">Software</a></li>
+</ul>
+
+{%- for g in site.data.projects %}
+<section class="group" id="{{ g.id }}">
+  <h2>{{ g.name }}</h2>
+  <p>{{ g.blurb }}</p>
+  <div class="cards">
+    {%- for it in g.items %}
+    <article class="card">
+      <h3><a href="{% if it.url contains '://' %}{{ it.url }}{% else %}{{ it.url | relative_url }}{% endif %}">{{ it.title }}</a></h3>
+      <p>{{ it.desc }}</p>
+      {%- if it.extra %}
+      <ul class="links">
+        {%- for l in it.extra %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+      </ul>
+      {%- endif %}
+      <div class="foot">
+        {% if it.people != '' %}<span class="who">{{ it.people }}</span>{% endif %}
+        {% if it.status != '' %}<br><span class="status">{{ it.status }}</span>{% endif %}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}
+
+<section class="group" id="software">
+  <h2>Software</h2>
+  <p>Systems developed or co-developed by our founders and researchers, which our projects build on.</p>
+  <div class="cards">
+    <article class="card"><h3><a href="https://eprover.org/">E</a></h3><p>A high-performance automated theorem prover for first-order logic with equality, by Stephan Schulz.</p></article>
+    <article class="card"><h3><a href="https://prover9.org/">Prover9</a></h3><p>Automated theorem prover for first-order and equational logic; Robert Veroff’s hint-based methods and Bigloop runs scale it to very long proofs.</p></article>
+    <article class="card"><h3><a href="https://github.com/ai4reason/Megalodon">Megalodon</a></h3><p>Chad E. Brown’s fast proof checker for higher-order set theory, the backbone of our large autoformalization experiments.</p></article>
+    <article class="card"><h3><a href="https://github.com/felixprover/felix">Felix</a></h3><p>Adrian De Lon’s natural proof assistant: controlled mathematical English in LaTeX with automated reasoning and a proof kernel.</p></article>
+    <article class="card"><h3>ENIGMA and MaLARea</h3><p>Learning-guided clause selection for E and machine-learning-based reasoning over large theories, from Josef Urban and colleagues.</p></article>
+    <article class="card"><h3>TacticToe and CoqHammer</h3><p>Learning-guided tactic proving in HOL4 (Thibault Gauthier) and hammer automation for Coq (Cezary Kaliszyk and colleagues).</p></article>
+  </div>
+  <p class="muted small" style="margin-top:1.5rem">Project descriptions summarize the reported state of each repository in November 2026. They distinguish checked formal artifacts from claims that still await independent review.</p>
+</section>

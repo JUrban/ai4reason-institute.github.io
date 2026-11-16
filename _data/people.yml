@@ -1,0 +1,178 @@
+# People at AI4REASON. Fields: name, id (anchor), role, aff, url, photo (under /assets/img/people/),
+# initials (shown when there is no photo), bio, links (list of {label, url}).
+
+director:
+  - name: Josef Urban
+    id: josef-urban
+    role: Director · co-founder
+    aff: Researcher, Chalmers University of Technology and University of Gothenburg
+    url: https://josefurban.eu/
+    initials: JU
+    bio: >-
+      Josef works on combining machine learning with automated reasoning over large formal
+      mathematical libraries, from learning-guided theorem provers and premise selection to
+      autoformalization with LLM agents. He is the principal investigator of the ERC Advanced Grant
+      NextReason (2026–2030) and earlier led the AI4REASON ERC project. His 2026 work includes
+      130k lines of formal topology produced in two weeks with Megalodon, Munkres’ topology in
+      Isabelle/HOL, the Four Colour Theorem in Candle, and 48-hour agentic research experiments on
+      the Kourovka Notebook.
+    links:
+      - { label: homepage, url: "https://josefurban.eu/" }
+      - { label: GitHub, url: "https://github.com/JUrban" }
+      - { label: projects, url: "/research/" }
+
+board:
+  - name: Robert Veroff
+    id: robert-veroff
+    role: Chair of the Board · co-founder
+    aff: Professor Emeritus, University of New Mexico, USA
+    url: https://www.cs.unm.edu/~veroff/
+    initials: RV
+    bio: >-
+      Bob is known for hint-based proof search with Prover9 and for long-running automated
+      reasoning projects in loop theory, including the AIM conjecture. In 2025 his 40-day
+      Bigloop run proved that commutative AIM loops are nilpotent of class 3.
+  - name: Cezary Kaliszyk
+    id: cezary-kaliszyk
+    role: Board member · co-founder
+    aff: Professor, University of Melbourne, Australia
+    url: https://ckaliszyk.github.io/
+    initials: CK
+    bio: >-
+      Cezary works on interactive and automated theorem proving, hammers such as CoqHammer and
+      HOL(y)Hammer, and machine learning for formal mathematics.
+  - name: Stephan Schulz
+    id: stephan-schulz
+    role: Board member · co-founder
+    aff: Professor, DHBW Stuttgart, Germany
+    url: https://wwwlehre.dhbw-stuttgart.de/~sschulz/DHBW_Stephan_Schulz/Stephan_Schulz.html
+    initials: SS
+    bio: >-
+      Stephan is the author of the E theorem prover, one of the leading automated theorem provers
+      for first-order logic with equality, and works on automated reasoning and its applications.
+
+researchers:
+  - name: Chad E. Brown
+    id: chad-brown
+    role: Researcher
+    aff: NextReason ERC project
+    initials: CB
+    bio: >-
+      Chad works on higher-order logic, set-theoretic foundations and automated and interactive
+      theorem proving. He is the author of the Megalodon proof checker, on which the institute’s
+      large-scale autoformalization experiments run, and of the higher-order automated theorem
+      prover Satallax. In 2026 he co-developed Agent Hunt, a bounty market in which LLM agents
+      collaborate on formalizing algebraic topology.
+    links:
+      - { label: Megalodon, url: "https://github.com/ai4reason/Megalodon" }
+      - { label: Agent Hunt, url: "https://arxiv.org/abs/2603.06737" }
+  - name: Adrian De Lon
+    id: adrian-de-lon
+    role: Researcher
+    aff: NextReason ERC project
+    url: https://adelon.net
+    initials: AD
+    bio: >-
+      Adrian develops Felix, an experimental proof assistant for controlled mathematical English
+      embedded in LaTeX, based on higher-order Tarski–Grothendieck set theory. In 2026 he added a
+      small proof kernel, ontological checking, higher-order reasoning and calculational proofs, and
+      autoformalized substantial mathematics in Felix: the Tietze extension theorem, Silver’s theorem
+      on singular cardinals, the Erdős–Dushnik–Miller theorem, Ψ-spaces, Stone and Birkhoff
+      representation theorems, and the reals as an ordered subfield of the surreals. The library now
+      has about 220,000 lines. He also works on multilingual grammars with Grammatical Framework.
+    links:
+      - { label: homepage, url: "https://adelon.net" }
+      - { label: Felix, url: "https://github.com/felixprover/felix" }
+  - name: Thibault Gauthier
+    id: thibault-gauthier
+    role: Researcher
+    aff: NextReason ERC project
+    url: https://www.thibaultgauthier.fr/
+    initials: TG
+    bio: >-
+      Thibault works on machine learning for theorem proving and program synthesis. He created
+      TacticToe, a learning-guided tactic prover for HOL4, and develops self-learning systems that
+      synthesize programs for OEIS integer sequences. In 2026 he presented program generation as an
+      evolution operator at AITP and, with Josef Urban and Mirek Olšák, studies automated and human
+      explanations of “alien” programs.
+    links:
+      - { label: homepage, url: "https://www.thibaultgauthier.fr/" }
+  - name: Zar Goertzel
+    id: zar-goertzel
+    role: Researcher
+    aff: Automated reasoning, verification and foundations of inference
+    url: https://gardenofminds.art/research/
+    photo: zar-goertzel.jpg
+    initials: ZG
+    bio: >-
+      Zar works on verified proof checking, foundations of probabilistic inference and reasoning
+      languages. His 2026 work includes mm-lean4, a Lean 4 Metamath verifier with formal soundness
+      and completeness results that checks the full set.mm library; a Lean formalization of the
+      Knuth–Skilling foundations of inference; the World-Model Calculus for Probabilistic Logic
+      Networks; PLN-based premise selection with E and Vampire; and CeTTa, a C runtime for MeTTa.
+    links:
+      - { label: research, url: "https://gardenofminds.art/research/" }
+      - { label: MeTTapedia, url: "https://github.com/zariuq/MeTTapedia" }
+      - { label: mm-lean4, url: "https://github.com/zariuq/mm-lean4" }
+      - { label: GitHub, url: "https://github.com/zariuq" }
+  - name: Atle Hahn
+    id: atle-hahn
+    role: Researcher
+    aff: NextReason ERC project
+    photo: atle-hahn.jpg
+    initials: AH
+    bio: >-
+      Atle is a mathematician with a PhD in Applied Mathematics from the University of Bonn (2001).
+      From 2007 to 2017 he was a researcher and lecturer at the University of Lisbon, specializing in
+      mathematical physics and stochastic analysis, and from 2018 to 2023 a machine learning
+      consultant for industry. He returned to research at NOVA University Lisbon in 2024 and now
+      works at AI4REASON on AI for mathematics, automated reasoning and the formalization of
+      mathematical proofs: Felix formalizations of Munkres’ Topology, proof distillation, and the
+      Theorem Browser.
+    links:
+      - { label: Felix formalizations, url: "https://atlehahn.github.io/Felix-Formalizations/docs/index.html" }
+      - { label: Theorem Browser, url: "https://github.com/AtleHahn/Theorem-Browser" }
+
+associated:
+  - name: Mirek Olšák
+    id: mirek-olsak
+    role: Associated researcher
+    aff: Charles University, Prague
+    url: http://www.olsak.net/
+    initials: MO
+  - name: Sólrún Einarsdóttir
+    id: solrun-einarsdottir
+    role: Associated researcher
+    aff: University of Gothenburg
+    url: https://www.cse.chalmers.se/~slrn/
+    initials: SE
+
+visitors_2026:
+  - name: Aarne Ranta
+    id: aarne-ranta
+    role: Visitor 2026
+    aff: Professor, University of Gothenburg and Chalmers
+    inst: University of Gothenburg
+    url: https://www.cse.chalmers.se/~aarne/
+    initials: AR
+    bio: >-
+      Creator of Grammatical Framework. Joint work with Adrian De Lon on turning Felix
+      autoformalizations back into natural mathematical language with Informath.
+  - name: Michael Kinyon
+    id: michael-kinyon
+    role: Visitor 2026
+    aff: Professor of Mathematics, University of Denver, USA
+    inst: University of Denver
+    initials: MK
+    bio: >-
+      Algebraist working on loops and quasigroups, including the AIM conjecture. Co-author of the
+      48-hour Kourovka Notebook and GroupWorld experiments in agentic mathematical research.
+  - name: Robert Veroff
+    id: robert-veroff-visit
+    role: Visitor 2026
+    aff: Professor Emeritus, University of New Mexico, USA
+    inst: University of New Mexico
+    url: https://www.cs.unm.edu/~veroff/
+    initials: RV
+    bio: >-
+      Chair of the AI4REASON Board. Large-scale Prover9 proof search and the AIM project.

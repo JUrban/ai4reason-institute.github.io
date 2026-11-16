@@ -1,11 +1,70 @@
-title: AI4REASON Institute
-description: Advancing world-class research in AI, Automated Reasoning, and Machine Learning.
-theme: minima
-header_pages:
-  - index.md
-  - people.md
-  - sponsors.md
-  - news.md
+# AI4REASON website. Built natively by GitHub Pages (Jekyll 3.x, whitelisted plugins only):
+# push to the main branch and Pages rebuilds the site. No build step or GitHub Action is needed.
+
+title: AI4REASON
+legal_name: "AI4REASON z.ú."
+tagline: Independent research in AI, automated reasoning and machine learning
+description: >-
+  AI4REASON is an independent nonprofit research institute in Prague. We do research in
+  artificial intelligence, automated reasoning and machine learning, with applications in
+  mathematics, computer science and the sciences.
+url: https://ai4reason.eu
+baseurl: ""
+lang: en
+timezone: Europe/Prague
+email: ai4reason@gmail.com
+ico: "23753161"
+
+office:
+  name: Zirkon Office Center
+  street: "Sokolovská 131/86"
+  city: "186 00 Praha 8 – Karlín"
+  note: "opposite the Faculty of Mathematics and Physics of Charles University"
+registered:
+  street: "V Sedlci 249/4a"
+  city: "160 00 Praha 6 – Sedlec"
+
+# The main navigation, in order.
+nav:
+  - { title: About, url: /about/ }
+  - { title: Research, url: /research/ }
+  - { title: Publications, url: /publications/ }
+  - { title: People, url: /people/ }
+  - { title: News, url: /news/ }
+  - { title: Funding, url: /funding/ }
+  - { title: Contact, url: /contact/ }
+
+permalink: /news/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
-  
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, kind: news }
+  - scope: { path: "" }
+    values: { layout: page }
+  # Kept for old links, but not advertised: the charters contain founders' personal data.
+  - scope: { path: "AI4REASON_charter.pdf" }
+    values: { sitemap: false }
+  - scope: { path: "AI4REASON_charter_cz_en.pdf" }
+    values: { sitemap: false }
+  - scope: { path: "etc" }
+    values: { sitemap: false }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

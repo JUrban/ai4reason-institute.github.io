@@ -1,0 +1,23 @@
+{%- assign p = include.p -%}
+<article class="person" id="{{ p.id }}">
+  {%- if p.photo %}
+  <img class="ph" src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}" width="84" height="84" loading="lazy">
+  {%- else %}
+  <div class="ini" aria-hidden="true">{{ p.initials }}</div>
+  {%- endif %}
+  <div>
+    <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+    {% if p.role %}<p class="role">{{ p.role }}</p>{% endif %}
+    {% if p.aff %}<p class="aff">{{ p.aff }}</p>{% endif %}
+  </div>
+  {%- unless include.compact %}
+  {% if p.bio %}<p class="bio">{{ p.bio }}</p>{% endif %}
+  {%- if p.links %}
+  <ul class="links">
+    {%- for l in p.links %}
+    <li><a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+  {%- endunless %}
+</article>

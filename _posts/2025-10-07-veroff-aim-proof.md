@@ -1,19 +1,22 @@
 ---
-title: Significant Prover9 Result
-description: Commutative AIM proven nilpotent of class 3 with advanced Prover9 methods
-theme: minima
+title: Significant Prover9 result
+subtitle: Commutative AIM proven nilpotent of class 3 with advanced Prover9 methods
+description: AI4REASON co-founder Bob Veroff announced a complete Prover9 proof that commutative AIM loops are nilpotent of class 3, one of the most complex results ever produced by Prover9.
+location: Albuquerque, NM
+byline: Robert Veroff
+kind: research
+permalink: /veroff-aim-proof/
+redirect_from:
+  - /veroff-aim-proof.html
+  - /251007_Prover9_result/
 ---
-
-# Significant Prover9 Result
-
-**October 7, 2025 — Albuquerque, NM**  
 **[AI4REASON co-founder Bob Veroff](https://www.cs.unm.edu/~veroff/)** has announced an important result in automated reasoning:  
 Prover9 has produced a **complete proof that the commutative AIM theory (AIM + x * y = y * x) is nilpotent of class 3**.
 
 While the result is not new mathematically — given the previously established proof of nilpotency class 3 for AIM by **Michael Kinyon** and **Petr Vojtěchovský** — it represents a **significant achievement in automated reasoning**.  
 This result is among the most complex ever produced by Prover9, demonstrating the power of large-scale iterative reasoning guided by hint-based methods.
 
----- 
+---
 
 ## Overview
 
@@ -88,9 +91,3 @@ Such techniques highlight how reasoning engines like **Prover9** can continue to
 ---
 
 Further information and background materials are available on the [AIM project page](https://www.cs.unm.edu/~veroff/AIM_REDONE/).
-
----
-
-© AI4REASON Institute 2025  
-
-Business ID (IČ): 23753161

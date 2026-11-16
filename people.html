@@ -1,0 +1,48 @@
+---
+title: People
+permalink: /people/
+redirect_from:
+  - /people.html
+wide: true
+kicker: Team
+lead: AI4REASON was founded by researchers in automated reasoning and its AI and machine-learning aspects. In 2026 the institute hired its first researchers to work on the NextReason ERC project.
+description: Founders, Board of Trustees, Director, researchers and visitors of the AI4REASON Institute.
+---
+<h2>Director</h2>
+<div class="people">
+  {%- for p in site.data.people.director %}{% include person.html p=p %}{% endfor %}
+</div>
+
+<h2>Researchers</h2>
+<div class="people">
+  {%- for p in site.data.people.researchers %}{% include person.html p=p %}{% endfor %}
+</div>
+
+<h2>Board of Trustees</h2>
+<p class="muted">The Board of Trustees (správní rada) is the institute’s executive board.</p>
+<div class="people">
+  {%- for p in site.data.people.board %}{% include person.html p=p %}{% endfor %}
+</div>
+
+<h2>Founders</h2>
+<ul class="names">
+  <li><span class="n"><a href="https://www.cs.unm.edu/~veroff/">Robert Veroff, Ph.D.</a></span> — Professor Emeritus, University of New Mexico, USA</li>
+  <li><span class="n"><a href="https://wwwlehre.dhbw-stuttgart.de/~sschulz/DHBW_Stephan_Schulz/Stephan_Schulz.html">Prof. Dr. Stephan Schulz</a></span> — Professor, DHBW Stuttgart, Germany</li>
+  <li><span class="n"><a href="https://ckaliszyk.github.io/">Cezary Kaliszyk, Ph.D.</a></span> — Professor, University of Melbourne, Australia</li>
+  <li><span class="n"><a href="https://josefurban.eu/">Josef Urban, Ph.D.</a></span> — Director of AI4REASON</li>
+</ul>
+
+<h2>Associated researchers</h2>
+<div class="people compact">
+  {%- for p in site.data.people.associated %}{% include person.html p=p compact=true %}{% endfor %}
+</div>
+
+<h2 id="visitors">Visitors in 2026</h2>
+<div class="people">
+  {%- for p in site.data.people.visitors_2026 %}{% include person.html p=p %}{% endfor %}
+</div>
+
+<div class="note" style="margin-top:2.5rem">
+  <p><strong>Join us.</strong> We welcome visitors, students and researchers interested in AI for mathematics,
+  automated reasoning and formalization. Write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+</div>

@@ -1,0 +1,22 @@
+---
+title: News and activities
+permalink: /news/
+redirect_from:
+  - /news.html
+kicker: News
+lead: Announcements, research highlights, funding and events from AI4REASON.
+description: Updates, research highlights and announcements from the AI4REASON Institute.
+---
+{%- assign year = "" %}
+{%- for post in site.posts %}
+{%- assign y = post.date | date: "%Y" %}
+{%- if y != year %}{% assign year = y %}<h2 class="news-year">{{ y }}</h2>{% endif %}
+<article class="news-entry" id="{{ post.slug }}">
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p>{{ post.description }}</p>
+  <a href="{{ post.url | relative_url }}">Read more</a>
+</article>
+{%- endfor %}
+
+<p class="muted" style="margin-top:2rem">Subscribe with the <a href="{{ '/feed.xml' | relative_url }}">Atom feed</a>.</p>
