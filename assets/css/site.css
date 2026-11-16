@@ -172,8 +172,9 @@ a.stat:hover { border-color: var(--teal); color: var(--text); }
 .card h3 a { color: var(--text); text-decoration: none; }
 .card h3 a:hover { color: var(--teal); text-decoration: underline; }
 .card p { font-size: .95rem; color: var(--muted); margin-bottom: .6rem; }
-.card .foot { margin-top: auto; font-size: .84rem; color: var(--muted); }
-.card .foot .who { color: var(--text); font-weight: 600; }
+.card .foot { margin-top: auto; padding-top: .45rem; font-size: .84rem; color: var(--muted); }
+.card .foot .who { color: var(--text); }
+.card .foot .who b { font-weight: 600; }
 .status { display: inline-block; font-size: .8rem; padding: .05rem .5rem; border-radius: 6px; background: var(--pale); border: 1px solid var(--line); color: var(--muted); margin-top: .35rem; }
 
 /* --- people --- */

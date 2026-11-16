@@ -3,7 +3,7 @@ title: Research
 permalink: /research/
 wide: true
 kicker: Projects and software
-lead: Our research program covers AI for automated and interactive theorem proving, autoformalization, synthesis of mathematical objects and conjectures, and autonomous “automated mathematicians”. Below are our current projects, with an honest status line for each.
+lead: Our research program covers AI for automated and interactive theorem proving, autoformalization, synthesis of mathematical objects and conjectures, and autonomous “automated mathematicians”. Below are our current projects with everyone credited on them (institute researchers in bold) and an honest status line for each.
 description: Research projects of AI4REASON in autoformalization, readable formal mathematics, verified computation, learning-guided automated reasoning and AI for mathematical research.
 ---
 <ul class="toc">
@@ -28,7 +28,11 @@ description: Research projects of AI4REASON in autoformalization, readable forma
       </ul>
       {%- endif %}
       <div class="foot">
-        {% if it.people != '' %}<span class="who">{{ it.people }}</span>{% endif %}
+        {% if it.people.size > 0 %}<span class="who">
+          {%- for a in it.people -%}
+            {%- if site.members contains a %}<b>{{ a }}</b>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}
+          {%- endfor -%}
+        </span>{% endif %}
         {% if it.status != '' %}<br><span class="status">{{ it.status }}</span>{% endif %}
       </div>
     </article>

@@ -5,7 +5,7 @@ kicker: Papers, talks and manuscripts
 lead: Work by AI4REASON people in 2026. Names of institute members are in bold; use the buttons to show one person’s work.
 description: 2026 papers, conference talks and research manuscripts by AI4REASON researchers.
 ---
-{%- assign people = "Josef Urban,Chad E. Brown,Adrian De Lon,Thibault Gauthier,Zar Goertzel,Atle Hahn,Mirek Olšák" | split: "," %}
+{%- assign people = site.members %}
 <div class="filters" role="group" aria-label="Filter by person" hidden>
   <button type="button" data-person="" aria-pressed="true">Everyone</button>
   {%- for n in people %}

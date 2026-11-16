@@ -15,6 +15,9 @@ timezone: Europe/Prague
 email: ai4reason@gmail.com
 ico: "23753161"
 
+# Institute researchers: shown in bold in author and project credits, and offered as publication filters.
+members: [Josef Urban, Chad E. Brown, Adrian De Lon, Thibault Gauthier, Zar Goertzel, Atle Hahn, Mirek Olšák]
+
 office:
   name: Zirkon Office Center
   street: "Sokolovská 131/86"
